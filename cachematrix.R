@@ -1,4 +1,4 @@
-setwd("~/Desktop/Coursera/R_Programming") #setting work directory to right folder
+setwd("~/Desktop/Coursera/R_Programming") #setting work directory to course folder
 
 #This function creates a special matrix and caches its inverse using the function solve
 makeCacheMatrix <- function(x = matrix()) {
@@ -32,4 +32,4 @@ class(invmatrix) # it gives the class of the object invmatrix, which is a list!
 summary(invmatrix);
 invmatrix$get(); # gives the values for each row/column of the matrix
 cacheSolve(invmatrix) # calculate the inverse of the matrix
-cacheSolve(invmatrix) # When the function is requested for the second time (if the matrix is still the original one), we get the cached value with the messa "getting cached data"
+cacheSolve(invmatrix) # When the function is requested for the second time (if the matrix is still the original one), we get the cached value with the message "getting cached data"
